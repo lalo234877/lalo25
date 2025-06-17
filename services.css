@@ -1,0 +1,105 @@
+.services-section {
+    background-color: #f8f9fa;
+}
+
+.services-section .section-title {
+    color: var(--dark-color);
+}
+
+.services-section .section-title::after {
+    background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+    width: 150px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    padding: 1.5rem;
+    color: white;
+    position: relative;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-body p {
+    margin-bottom: 1.5rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.service-card:nth-child(1) .card-header {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.service-card:nth-child(2) .card-header {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.service-card:nth-child(3) .card-header {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.service-card:nth-child(4) .card-header {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.service-card:nth-child(5) .card-header {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.service-card:nth-child(6) .card-header {
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}

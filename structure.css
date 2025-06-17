@@ -1,0 +1,66 @@
+.structure-section {
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+}
+
+.structure-section .section-title {
+    color: var(--dark-color);
+}
+
+.structure-section .section-title::after {
+    background: var(--primary-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid-item {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-top: 4px solid transparent;
+    text-align: center;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-top-color: var(--secondary-color);
+}
+
+.grid-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.grid-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.grid-item h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--secondary-color);
+    border-radius: 3px;
+}
+
+.grid-item:nth-child(1) h3::after { background: #3498db; }
+.grid-item:nth-child(2) h3::after { background: #2ecc71; }
+.grid-item:nth-child(3) h3::after { background: #e74c3c; }
+.grid-item:nth-child(4) h3::after { background: #f39c12; }
+.grid-item:nth-child(5) h3::after { background: #9b59b6; }
+.grid-item:nth-child(6) h3::after { background: #1abc9c; }

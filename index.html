@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información completa sobre Internet: historia, estructura, servicios, seguridad y nuevas tecnologías emergentes. Datos verificables y fuentes confiables.">
+    <meta name="keywords" content="Internet, historia internet, estructura internet, seguridad web, nuevas tecnologías, servicios internet, computación en nube, ciberseguridad">
+    <meta name="author" content="Explorando Internet">
+    <meta property="og:title" content="Explorando Internet: Historia, Estructura y Tecnologías">
+    <meta property="og:description" content="Todo lo que necesitas saber sobre Internet en un solo lugar">
+    <meta property="og:type" content="website">
+    <title>Explorando Internet: Historia, Estructura, Servicios y Tecnologías Emergentes</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/history.css">
+    <link rel="stylesheet" href="styles/structure.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/security.css">
+    <link rel="stylesheet" href="styles/technologies.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+    <header class="main-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <h1>Explorando Internet</h1>
+                <p class="subtitle">Desde sus Fundamentos hasta el Futuro</p>
+            </div>
+            <button class="menu-toggle" aria-label="Menú de navegación" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#history" class="nav-link"><i class="fas fa-history"></i> Historia</a></li>
+                    <li><a href="#structure" class="nav-link"><i class="fas fa-network-wired"></i> Estructura</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fas fa-globe"></i> Servicios</a></li>
+                    <li><a href="#security" class="nav-link"><i class="fas fa-shield-alt"></i> Seguridad</a></li>
+                    <li><a href="#technologies" class="nav-link"><i class="fas fa-microchip"></i> Tecnologías</a></li>
+                    <li><a href="#comments" class="nav-link"><i class="fas fa-comments"></i> Comentarios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Sección Historia -->
+        <section id="history" class="section history-section" aria-labelledby="history-heading">
+            <div class="container">
+                <h2 id="history-heading" class="section-title"><i class="fas fa-book-open"></i> Historia y Evaluación de Internet</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <article class="history-article">
+                            <h3>Los Orígenes: ARPANET</h3>
+                            <p>Internet tuvo sus inicios en 1969 con ARPANET, una red creada por el Departamento de Defensa de EE.UU. para mantener comunicaciones en caso de un ataque nuclear. El primer mensaje enviado fue "LO" (un intento fallido de enviar "LOGIN") entre UCLA y el Stanford Research Institute <a href="https://www.internetsociety.org/internet/history-internet/brief-history-internet/" target="_blank" rel="noopener noreferrer">(Fuente: Internet Society)</a>.</p>
+                        </article>
+                        
+                        <article class="history-article">
+                            <h3>La Revolución del TCP/IP</h3>
+                            <p>En 1983, ARPANET adoptó el protocolo TCP/IP, desarrollado por Vinton Cerf y Robert Kahn, que se convirtió en el estándar para la comunicación entre redes. Este fue el verdadero nacimiento de Internet como lo conocemos <a href="https://www.computerhistory.org/internethistory/" target="_blank" rel="noopener noreferrer">(Fuente: Computer History Museum)</a>.</p>
+                        </article>
+                        
+                        <article class="history-article">
+                            <h3>La World Wide Web</h3>
+                            <p>Tim Berners-Lee, un científico británico, inventó la World Wide Web en 1989 mientras trabajaba en el CERN. Su visión de un sistema de información interconectado globalmente se materializó con el primer navegador web en 1991 <a href="https://webfoundation.org/about/vision/history-of-the-web/" target="_blank" rel="noopener noreferrer">(Fuente: Web Foundation)</a>.</p>
+                        </article>
+                    </div>
+                    <aside class="timeline" role="region" aria-label="Línea de tiempo de la historia de Internet">
+                        <div class="timeline-item">
+                            <div class="timeline-date">1969</div>
+                            <div class="timeline-content">Nace ARPANET</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1983</div>
+                            <div class="timeline-content">Adopción de TCP/IP</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1989</div>
+                            <div class="timeline-content">Invento de la WWW</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1994</div>
+                            <div class="timeline-content">Netscape Navigator</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2004</div>
+                            <div class="timeline-content">Web 2.0</div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Estructura -->
+        <section id="structure" class="section structure-section" aria-labelledby="structure-heading">
+            <div class="container">
+                <h2 id="structure-heading" class="section-title"><i class="fas fa-sitemap"></i> Estructura y Componentes de Internet</h2>
+                <div class="grid-container">
+                    <article class="grid-item">
+                        <div class="grid-icon"><i class="fas fa-server"></i></div>
+                        <h3>Infraestructura Física</h3>
+                        <p>Internet se compone de una compleja red de cables submarinos (más de 1.3 millones de km), centros de datos, routers y puntos de intercambio de tráfico (IXP). Los proveedores de servicios de Internet (ISP) conectan a los usuarios finales con esta red troncal <a href="https://www.submarinecablemap.com/" target="_blank" rel="noopener noreferrer">(Mapa de cables submarinos)</a>.</p>
+                    </article>
+                    
+                    <article class="grid-item">
+                        <div class="grid-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3>Protocolos de Comunicación</h3>
+                        <p>TCP/IP es el conjunto fundamental de protocolos. IP (Internet Protocol) maneja el direccionamiento y enrutamiento, mientras que TCP (Transmission Control Protocol) asegura la entrega confiable de datos <a href="https://www.ietf.org/rfc/rfc1180.txt" target="_blank" rel="noopener noreferrer">(RFC 1180)</a>.</p>
+                    </article>
+                    
+                    <article class="grid-item">
+                        <div class="grid-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3>Modelo Cliente-Servidor</h3>
+                        <p>La mayoría de los servicios de Internet operan bajo este modelo. Los clientes (navegadores, apps) solicitan recursos a servidores que los alojan. Los servidores web (como Apache, Nginx), de bases de datos y de aplicaciones trabajan juntos para entregar contenido dinámico.</p>
+                    </article>
+                    
+                    <article class="grid-item">
+                        <div class="grid-icon"><i class="fas fa-address-book"></i></div>
+                        <h3>Sistema de Nombres de Dominio (DNS)</h3>
+                        <p>El DNS es el directorio telefónico de Internet, traduciendo nombres de dominio (ej. google.com) a direcciones IP numéricas. Es una base de datos distribuida globalmente con servidores raíz, TLD (top-level domain) y autoritativos <a href="https://www.icann.org/resources/pages/dns-2012-02-25-en" target="_blank" rel="noopener noreferrer">(Fuente: ICANN)</a>.</p>
+                    </article>
+                    
+                    <article class="grid-item">
+                        <div class="grid-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h3>Redes de Distribución de Contenido (CDN)</h3>
+                        <p>Las CDN como Cloudflare y Akamai almacenan copias de sitios web en servidores distribuidos geográficamente para reducir la latencia y mejorar la velocidad de carga. Hoy, más del 50% del tráfico web pasa por CDNs <a href="https://www.cloudflare.com/learning/cdn/what-is-a-cdn/" target="_blank" rel="noopener noreferrer">(Fuente: Cloudflare)</a>.</p>
+                    </article>
+                    
+                    <article class="grid-item">
+                        <div class="grid-icon"><i class="fas fa-temperature-high"></i></div>
+                        <h3>Internet de las Cosas (IoT)</h3>
+                        <p>La expansión de Internet más allá de computadoras tradicionales incluye ahora miles de millones de dispositivos IoT - desde termostatos hasta vehículos - que recopilan y comparten datos, creando nuevas arquitecturas de red descentralizadas <a href="https://www.iotforall.com/" target="_blank" rel="noopener noreferrer">(Fuente: IoT For All)</a>.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="services" class="section services-section" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section-title"><i class="fas fa-laptop-code"></i> Servicios y Aplicaciones de Internet</h2>
+                <div class="cards-container">
+                    <article class="service-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-globe-americas"></i></div>
+                            <h3>World Wide Web</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>El servicio más conocido, basado en HTTP/HTTPS. Evolucionó de páginas estáticas a aplicaciones web complejas (SPAs, PWAs) con frameworks como React, Angular y Vue.js. La web moderna incluye streaming, comercio electrónico y colaboración en tiempo real <a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">(Fuente: W3C)</a>.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Navegadores modernos (Chrome, Firefox, Safari)</li>
+                                <li><i class="fas fa-check"></i> Motores de búsqueda (Google, Bing)</li>
+                                <li><i class="fas fa-check"></i> Webs progresivas (PWAs)</li>
+                                <li><i class="fas fa-check"></i> WebAssembly para aplicaciones de alto rendimiento</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                            <h3>Correo Electrónico</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Uno de los primeros servicios de Internet (desde 1971) sigue siendo esencial. Protocolos como SMTP (envío), POP3 e IMAP (recepción) permiten su funcionamiento. Servicios como Gmail y Outlook ofrecen almacenamiento en la nube, filtros anti-spam y IA para organización <a href="https://tools.ietf.org/html/rfc5321" target="_blank" rel="noopener noreferrer">(RFC 5321)</a>.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Clientes de email (Outlook, Thunderbird)</li>
+                                <li><i class="fas fa-check"></i> Webmail (Gmail, Yahoo Mail)</li>
+                                <li><i class="fas fa-check"></i> Cifrado con PGP y S/MIME</li>
+                                <li><i class="fas fa-check"></i> Integración con calendarios y contactos</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-file-upload"></i></div>
+                            <h3>Transferencia de Archivos</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>FTP fue el protocolo tradicional, pero hoy predominan servicios basados en la nube como Dropbox, Google Drive y OneDrive. Protocolos como BitTorrent permiten distribución descentralizada, mientras que WeTransfer facilita envíos temporales de grandes archivos <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">(Fuente: FileZilla)</a>.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Almacenamiento en la nube (Dropbox, iCloud)</li>
+                                <li><i class="fas fa-check"></i> Transferencia P2P (BitTorrent, Resilio)</li>
+                                <li><i class="fas fa-check"></i> Servidores FTP/FTPS/SFTP</li>
+                                <li><i class="fas fa-check"></i> Sincronización multiplataforma</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-comments"></i></div>
+                            <h3>Comunicación en Tiempo Real</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Desde IRC y mensajería instantánea (ICQ, AIM) hasta apps modernas como WhatsApp, Telegram y Signal. Las videollamadas con Zoom, Teams y Meet se volvieron esenciales. WebRTC permite comunicación peer-to-peer directamente en navegadores <a href="https://webrtc.org/" target="_blank" rel="noopener noreferrer">(Fuente: WebRTC)</a>.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Mensajería (WhatsApp, Signal)</li>
+                                <li><i class="fas fa-check"></i> Videoconferencia (Zoom, Google Meet)</li>
+                                <li><i class="fas fa-check"></i> VoIP (Skype, Discord)</li>
+                                <li><i class="fas fa-check"></i> Chat en tiempo real (Slack, Microsoft Teams)</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-users"></i></div>
+                            <h3>Redes Sociales</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Desde Friendster y MySpace hasta Facebook, Twitter (ahora X), Instagram y TikTok. Las redes sociales han transformado la comunicación, el marketing y la política. Plataformas como LinkedIn dominan el ámbito profesional, mientras Twitch lidera el streaming en vivo <a href="https://www.pewresearch.org/internet/" target="_blank" rel="noopener noreferrer">(Fuente: Pew Research)</a>.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Redes generalistas (Facebook, Twitter)</li>
+                                <li><i class="fas fa-check"></i> Fotos/videos (Instagram, TikTok)</li>
+                                <li><i class="fas fa-check"></i> Profesionales (LinkedIn)</li>
+                                <li><i class="fas fa-check"></i> Streaming (Twitch, YouTube Live)</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Computación en la Nube</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>IaaS (AWS, Azure), PaaS (Heroku, Google App Engine) y SaaS (Google Workspace, Office 365) han revolucionado cómo las empresas usan la tecnología. Serverless computing y containers (Docker, Kubernetes) permiten escalabilidad y eficiencia sin precedentes <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank" rel="noopener noreferrer">(Fuente: AWS)</a>.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Infraestructura como servicio (AWS EC2)</li>
+                                <li><i class="fas fa-check"></i> Plataformas como servicio (Azure App Service)</li>
+                                <li><i class="fas fa-check"></i> Software como servicio (Salesforce)</li>
+                                <li><i class="fas fa-check"></i> Funciones como servicio (AWS Lambda)</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Seguridad -->
+        <section id="security" class="section security-section" aria-labelledby="security-heading">
+            <div class="container">
+                <h2 id="security-heading" class="section-title"><i class="fas fa-user-shield"></i> Seguridad en Internet</h2>
+                <div class="security-content">
+                    <div class="security-intro">
+                        <p>Con el crecimiento de Internet, los riesgos de seguridad han aumentado exponencialmente. Desde virus simples hasta ciberataques sofisticados patrocinados por estados, la seguridad en línea es una preocupación crítica para individuos, empresas y gobiernos <a href="https://www.cisa.gov/cybersecurity" target="_blank" rel="noopener noreferrer">(Fuente: CISA)</a>.</p>
+                    </div>
+                    <div class="threats-solutions">
+                        <div class="threats">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Principales Amenazas</h3>
+                            <article class="threat-item">
+                                <h4>Malware</h4>
+                                <p>Software malicioso que incluye virus, gusanos, troyanos, ransomware y spyware. El ransomware WannaCry (2017) afectó a más de 200,000 computadoras en 150 países <a href="https://www.ncsc.gov.uk/news/wannacry-ransomware-attack-one-year-on" target="_blank" rel="noopener noreferrer">(Fuente: NCSC)</a>.</p>
+                            </article>
+                            <article class="threat-item">
+                                <h4>Phishing</h4>
+                                <p>Intentos de obtener información sensible mediante engaño. El 85% de los ataques comienzan con phishing. Técnicas como spear phishing y whaling son cada vez más dirigidas <a href="https://www.proofpoint.com/us/threat-reference/phishing" target="_blank" rel="noopener noreferrer">(Fuente: Proofpoint)</a>.</p>
+                            </article>
+                            <article class="threat-item">
+                                <h4>Ataques DDoS</h4>
+                                <p>Ataques de denegación de servicio que saturan servidores con tráfico falso. El ataque a Dyn (2016) interrumpió servicios como Twitter, Netflix y Reddit <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/" target="_blank" rel="noopener noreferrer">(Fuente: Cloudflare)</a>.</p>
+                            </article>
+                            <article class="threat-item">
+                                <h4>Vulnerabilidades Zero-Day</h4>
+                                <p>Exploits de fallas desconocidas para los desarrolladores. Stuxnet (2010) fue un famoso ataque que usó múltiples zero-days contra sistemas industriales <a href="https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/" target="_blank" rel="noopener noreferrer">(Fuente: Wired)</a>.</p>
+                            </article>
+                        </div>
+                        <div class="solutions">
+                            <h3><i class="fas fa-shield-alt"></i> Medidas de Protección</h3>
+                            <article class="solution-item">
+                                <h4>Criptografía</h4>
+                                <p>HTTPS (TLS 1.3), VPNs, cifrado de extremo a extremo (Signal, WhatsApp). El 95% del tráfico web en EE.UU. ahora usa HTTPS, frente al 50% en 2016 <a href="https://transparencyreport.google.com/https/overview" target="_blank" rel="noopener noreferrer">(Fuente: Google Transparency Report)</a>.</p>
+                            </article>
+                            <article class="solution-item">
+                                <h4>Autenticación Multifactor</h4>
+                                <p>Combinación de contraseñas con tokens físicos, apps autenticadoras o biometría. Reduce el riesgo de acceso no autorizado en un 99.9% <a href="https://www.microsoft.com/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/" target="_blank" rel="noopener noreferrer">(Fuente: Microsoft)</a>.</p>
+                            </article>
+                            <article class="solution-item">
+                                <h4>Firewalls y SIEMs</h4>
+                                <p>Sistemas de prevención de intrusiones (IPS) y herramientas de monitorización como Splunk y IBM QRadar detectan y bloquean actividades sospechosas <a href="https://www.csoonline.com/article/2124698/what-is-a-firewall-and-how-does-it-work.html" target="_blank" rel="noopener noreferrer">(Fuente: CSO Online)</a>.</p>
+                            </article>
+                            <article class="solution-item">
+                                <h4>Concienciación del Usuario</h4>
+                                <p>Formación en seguridad informática, reconocimiento de phishing y mejores prácticas (no reutilizar contraseñas, actualizar software) <a href="https://www.ftc.gov/business-guidance/small-businesses/cybersecurity" target="_blank" rel="noopener noreferrer">(Fuente: FTC)</a>.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="security-trends">
+                        <h3><i class="fas fa-chart-line"></i> Tendencias en Ciberseguridad</h3>
+                        <article class="trend-item">
+                            <h4>Seguridad Zero Trust</h4>
+                            <p>Modelo que asume que ninguna entidad dentro o fuera de la red es confiable por defecto, requiriendo verificación constante <a href="https://www.nist.gov/itl/zero-trust-architecture" target="_blank" rel="noopener noreferrer">(Fuente: NIST)</a>.</p>
+                        </article>
+                        <article class="trend-item">
+                            <h4>Inteligencia Artificial</h4>
+                            <p>Machine learning para detectar patrones de ataque y comportamiento anómalo en tiempo real <a href="https://www.ibm.com/security/artificial-intelligence" target="_blank" rel="noopener noreferrer">(Fuente: IBM)</a>.</p>
+                        </article>
+                        <article class="trend-item">
+                            <h4>Blockchain para seguridad</h4>
+                            <p>Aplicaciones en identidad digital, registros inmutables y contratos inteligentes seguros <a href="https://www.gartner.com/smarterwithgartner/blockchain-based-security-promises-to-disrupt-cybersecurity" target="_blank" rel="noopener noreferrer">(Fuente: Gartner)</a>.</p>
+                        </article>
+                        <article class="trend-item">
+                            <h4>Privacidad por diseño</h4>
+                            <p>Regulaciones como GDPR obligan a incorporar privacidad desde la concepción de sistemas y aplicaciones <a href="https://gdpr-info.eu/" target="_blank" rel="noopener noreferrer">(Fuente: GDPR Info)</a>.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Tecnologías -->
+        <section id="technologies" class="section technologies-section" aria-labelledby="technologies-heading">
+            <div class="container">
+                <h2 id="technologies-heading" class="section-title"><i class="fas fa-rocket"></i> Nuevas Tecnologías Emergentes</h2>
+                <div class="tech-grid">
+                    <article class="tech-item">
+                        <div class="tech-icon">5G</div>
+                        <h3>Redes 5G y Beyond</h3>
+                        <p>La quinta generación de redes móviles ofrece velocidades hasta 100 veces mayores que 4G (hasta 10 Gbps), latencia ultra baja (1ms) y capacidad para conectar hasta 1 millón de dispositivos por km². Habilitará IoT masivo, realidad aumentada móvil y vehículos autónomos <a href="https://www.qualcomm.com/5g/what-is-5g" target="_blank" rel="noopener noreferrer">(Fuente: Qualcomm)</a>.</p>
+                        <div class="tech-features">
+                            <span><i class="fas fa-bolt"></i> Baja latencia</span>
+                            <span><i class="fas fa-tachometer-alt"></i> Alto ancho de banda</span>
+                            <span><i class="fas fa-project-diagram"></i> Network slicing</span>
+                        </div>
+                    </article>
+                    
+                    <article class="tech-item">
+                        <div class="tech-icon">AI</div>
+                        <h3>Inteligencia Artificial Generativa</h3>
+                        <p>Modelos como GPT-4, DALL-E y Stable Diffusion están transformando la creación de contenido. La IA integrada en motores de búsqueda (Bing Chat, Bard) y aplicaciones está haciendo la interacción más natural. Retos incluyen desinformación, sesgos y propiedad intelectual <a href="https://openai.com/research" target="_blank" rel="noopener noreferrer">(Fuente: OpenAI)</a>.</p>
+                        <div class="tech-features">
+                            <span><i class="fas fa-brain"></i> LLMs</span>
+                            <span><i class="fas fa-images"></i> Generación multimodal</span>
+                            <span><i class="fas fa-cogs"></i> Fine-tuning</span>
+                        </div>
+                    </article>
+                    
+                    <article class="tech-item">
+                        <div class="tech-icon">Web3</div>
+                        <h3>Web3 y Blockchain</h3>
+                        <p>Visón de una web descentralizada con identidad digital soberana, tokens no fungibles (NFTs) y aplicaciones descentralizadas (dApps) en blockchains como Ethereum. Aunque polémico, el concepto impulsa innovación en contratos inteligentes, DAOs y finanzas descentralizadas (DeFi) <a href="https://ethereum.org/en/web3/" target="_blank" rel="noopener noreferrer">(Fuente: Ethereum)</a>.</p>
+                        <div class="tech-features">
+                            <span><i class="fas fa-link"></i> Descentralización</span>
+                            <span><i class="fas fa-coins"></i> Tokens</span>
+                            <span><i class="fas fa-file-contract"></i> Smart contracts</span>
+                        </div>
+                    </article>
+                    
+                    <article class="tech-item">
+                        <div class="tech-icon">IoT</div>
+                        <h3>Internet de las Cosas Avanzado</h3>
+                        <p>Con más de 75 mil millones de dispositivos IoT proyectados para 2025, emergen redes especializadas (LoRaWAN, NB-IoT) para bajo consumo. Edge computing procesa datos localmente, reduciendo latencia. Aplicaciones en ciudades inteligentes, salud digital y agricultura de precisión <a href="https://www.iotworldtoday.com/" target="_blank" rel="noopener noreferrer">(Fuente: IoT World Today)</a>.</p>
+                        <div class="tech-features">
+                            <span><i class="fas fa-microchip"></i> Edge computing</span>
+                            <span><i class="fas fa-wifi"></i> Redes LPWAN</span>
+                            <span><i class="fas fa-clone"></i> Digital twins</span>
+                        </div>
+                    </article>
+                    
+                    <article class="tech-item">
+                        <div class="tech-icon">QM</div>
+                        <h3>Computación Cuántica</h3>
+                        <p>Aunque en etapas tempranas, la computación cuántica promete resolver problemas intratables para computadoras clásicas. Retos incluyen corrección de errores y escalabilidad. Aplicaciones potenciales en criptografía (romper RSA), descubrimiento de fármacos y optimización logística <a href="https://quantum-computing.ibm.com/" target="_blank" rel="noopener noreferrer">(Fuente: IBM Quantum)</a>.</p>
+                        <div class="tech-features">
+                            <span><i class="fas fa-atom"></i> Qubits</span>
+                            <span><i class="fas fa-project-diagram"></i> Superposición</span>
+                            <span><i class="fas fa-ring"></i> Entrelazamiento</span>
+                        </div>
+                    </article>
+                    
+                    <article class="tech-item">
+                        <div class="tech-icon">MR</div>
+                        <h3>Metaverso y Realidad Extendida</h3>
+                        <p>Convergencia de realidad virtual (VR), aumentada (AR) y mixta (MR) en espacios 3D persistentes. Tecnologías como OpenXR estandarizan desarrollo. Usos en educación inmersiva, teletrabajo colaborativo y experiencias de marca, aunque quedan retos de hardware y interoperabilidad <a href="https://about.meta.com/metaverse/" target="_blank" rel="noopener noreferrer">(Fuente: Meta)</a>.</p>
+                        <div class="tech-features">
+                            <span><i class="fas fa-cube"></i> Espacios 3D</span>
+                            <span><i class="fas fa-user-astronaut"></i> Avatares</span>
+                            <span><i class="fas fa-money-bill-wave"></i> Economías virtuales</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="tech-conclusion">
+                    <h3><i class="fas fa-balance-scale"></i> Desafíos y Consideraciones Éticas</h3>
+                    <p>El rápido avance tecnológico plantea cuestiones sobre privacidad (reconocimiento facial), brecha digital, impacto ambiental (energía de criptomonedas) y dependencia tecnológica. La regulación intenta equilibrar innovación con protección al consumidor y seguridad nacional <a href="https://www.weforum.org/agenda/2021/11/ethical-considerations-emerging-technologies/" target="_blank" rel="noopener noreferrer">(Fuente: World Economic Forum)</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Comentarios -->
+        <section id="comments" class="section comments-section" aria-labelledby="comments-heading">
+            <div class="container">
+                <h2 id="comments-heading" class="section-title"><i class="fas fa-comment-dots"></i> Comentarios y Feedback</h2>
+                <form id="comment-form" class="comment-form" aria-label="Formulario de comentarios">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Enviar Comentario</button>
+                </form>
+                <div id="comment-section" class="comment-list" aria-live="polite">
+                    <!-- Los comentarios se cargarán aquí -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Explorando Internet</h3>
+                    <p>Un recorrido por la historia, estructura, servicios, seguridad y futuro de la red que transformó el mundo.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos Académicos</h3>
+                    <ul>
+                        <li><a href="https://www.ietf.org/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> IETF</a></li>
+                        <li><a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> W3C</a></li>
+                        <li><a href="https://www.internetsociety.org/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Internet Society</a></li>
+                        <li><a href="https://www.icann.org/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> ICANN</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#history"><i class="fas fa-chevron-right"></i> Historia</a></li>
+                        <li><a href="#structure"><i class="fas fa-chevron-right"></i> Estructura</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                        <li><a href="#security"><i class="fas fa-chevron-right"></i> Seguridad</a></li>
+                        <li><a href="#technologies"><i class="fas fa-chevron-right"></i> Tecnologías</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit"><i class="fas fa-envelope"></i> Suscribirse</button>
+                    </form>
+                    <p class="newsletter-note">Recibe las últimas actualizaciones sobre tecnologías de Internet.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Explorando Internet. Todos los derechos reservados.</p>
+                <p class="last-updated">Última actualización: <time datetime="2023-11-15">15 de noviembre de 2023</time></p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Mapa del Sitio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/comments.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+.security-section {
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: white;
+}
+
+.security-section .section-title {
+    color: white;
+}
+
+.security-section .section-title::after {
+    background: var(--accent-color);
+}
+
+.security-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.threats-solutions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.threats, .solutions {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+}
+
+.threats h3, .solutions h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.threats h3 i, .solutions h3 i {
+    margin-right: 0.5rem;
+}
+
+.threat-item, .solution-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.threat-item:last-child, .solution-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.threat-item h4, .solution-item h4 {
+    color: white;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.security-trends {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+}
+
+.security-trends h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.security-trends h3 i {
+    margin-right: 0.5rem;
+}
+
+.trend-item {
+    margin-bottom: 1.5rem;
+}
+
+.trend-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .threats-solutions {
+        grid-template-columns: 1fr;
+    }
+    
+    .security-intro,
+    .security-trends {
+        padding: 1.5rem;
+    }
+}
